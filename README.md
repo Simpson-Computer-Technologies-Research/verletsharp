@@ -1,6 +1,6 @@
-# verlet ![Stars](https://img.shields.io/github/stars/realTristan/pyverlet?color=brightgreen) ![Watchers](https://img.shields.io/github/watchers/realTristan/pyverlet?label=Watchers)
+# verlet ![Stars](https://img.shields.io/github/stars/Simpson-Computer-Technologies-Research/verletsharp?color=brightgreen) ![Watchers](https://img.shields.io/github/watchers/Simpson-Computer-Technologies-Research/verletsharp?label=Watchers)
 
-Verlet is a physics engine built from scratch. It currently has Python (pygame) and C++ (SFML) implementations. The next implementation is expected to be C#. I'm doing this all for learning purposes.
+Verlet is a physics engine built from scratch.
 
 ### SFML
 Verlet uses SFML v2.6.0
