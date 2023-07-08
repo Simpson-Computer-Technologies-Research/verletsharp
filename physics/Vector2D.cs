@@ -2,40 +2,40 @@ using System;
 
 namespace physics
 {
-    class Vector2D
+    class Vec2D
     {
         // x and y components of the vector
         public double x;
         public double y;
 
         // When two vectors are added
-        public Vector2D operator +(Vector2D vec)
+        public Vec2D operator +(Vec2D vec)
         {
-            return new Vector2D(this.x + vec.x, this.y + vec.y);
+            return new Vec2D(this.x + vec.x, this.y + vec.y);
         }
 
         // When two vectors are subtracted
-        public Vector2D operator -(Vector2D vec)
+        public Vec2D operator -(Vec2D vec)
         {
-            return new Vector2D(this.x - vec.x, this.y - vec.y);
+            return new Vec2D(this.x - vec.x, this.y - vec.y);
         }
 
         // When a vector is multiplied by a scalar
-        public Vector2D operator Mult(double scalar)
+        public Vec2D operator Mult(double scalar)
         {
             this.x *= scalar;
             this.y *= scalar;
         }
 
         // When a vector is divided by a scalar
-        public Vector2D Div(double scalar)
+        public Vec2D Div(double scalar)
         {
             this.x /= scalar;
             this.y /= scalar;
             return this;
         }
         // When a vector is held to the power of a scalar
-        public Vector2D Pow(double scalar)
+        public Vec2D Pow(double scalar)
         {
             this.x = Math.Pow(this.x, scalar);
             this.y = Math.Pow(this.y, scalar);
@@ -43,7 +43,7 @@ namespace physics
         }
 
         // Add a scalar
-        public Vector2D Add(double b)
+        public Vec2D Add(double b)
         {
             this.x += b;
             this.y += b;
@@ -51,7 +51,7 @@ namespace physics
         }
 
         // Subtract a scalar
-        public Vector2D Sub(double b)
+        public Vec2D Sub(double b)
         {
             this.x -= b;
             this.y -= b;
@@ -59,7 +59,7 @@ namespace physics
         }
 
         // Multiply by a vector
-        public Vector2D MultVector(Vector2D vec)
+        public Vec2D MultVector(Vec2D vec)
         {
             this.x *= vec.x;
             this.y *= vec.y;
@@ -67,9 +67,9 @@ namespace physics
         }
 
         // Copy the vector
-        public Vector2D Copy()
+        public Vec2D Copy()
         {
-            return new Vector2D(this.x, this.y);
+            return new Vec2D(this.x, this.y);
         }
 
         // Get the vector
@@ -85,7 +85,7 @@ namespace physics
         }
 
         // Dot product of two vectors
-        public double Dot(Vector2D vec)
+        public double Dot(Vec2D vec)
         {
             return this.x * vec.x + this.y * vec.y;
         }
